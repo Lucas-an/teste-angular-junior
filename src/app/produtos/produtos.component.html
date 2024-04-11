@@ -1,0 +1,13 @@
+<app-tela tela="Cadastro de produtos">
+  <form [formGroup]="this.myForm">
+    <div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="10px">
+        <mat-form-field>
+            <mat-label>Filtro</mat-label>
+            <input matInput placeholder="Digite seu filtro aqui" formControlName="filtro"
+                (change)="this.atualizaLista()">
+        </mat-form-field>
+        <button mat-mini-fab (click)="this.adiciona()"><mat-icon>add</mat-icon></button>
+    </div>
+</form>
+</app-tela>
+
